@@ -2,10 +2,9 @@ import os
 from flask import Flask
 from datetime import datetime
 from datetime import date
+
 app = Flask(__name__)
-
 port = int(os.environ.get('PORT', 5000))
-
 
 @app.route('/')
 def index():
