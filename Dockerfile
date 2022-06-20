@@ -7,4 +7,3 @@ RUN pip install Flask
 EXPOSE 5000
 
 CMD [ "python", "main.py" ]
-

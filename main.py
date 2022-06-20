@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from datetime import datetime
 from datetime import date
@@ -10,4 +11,5 @@ current_time = datetime.now().time()
 def index():
     return f"Hello world. Today is {current_date}. Time is {current_time}"
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
