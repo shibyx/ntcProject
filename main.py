@@ -13,7 +13,7 @@ def index():
     timeInMSK = datetime.now(mskTz)
     current_date = datetime.now().date()
     current_time = timeInMSK.strftime("%H:%M:%S")
-    return f"Hello world. Today is {current_date}. Time is {current_time} test update"
+    return f"Hello world. Today is {current_date}. Time is {current_time}"
 
 
 if __name__ == "__main__":
