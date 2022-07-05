@@ -12,7 +12,7 @@ jobs:
 
     steps:
     -
-     name: chekout
+     name: Chekout
      uses: actions/checkout@v3
     
     - 
